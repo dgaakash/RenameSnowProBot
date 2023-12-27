@@ -4,23 +4,23 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = ("API_ID") #⚠️ Required
-    API_HASH  = ("API_HASH") #⚠️ Required
-    BOT_TOKEN = ("BOT_TOKEN") #⚠️ Required
-    BOT_USERNAME = ("BOT_USERNAME") #⚠️ Required
+    API_ID    = ("21027612") #⚠️ Required
+    API_HASH  = ("b36c5dc986f77eedd4bbf356b65eab19") #⚠️ Required
+    BOT_TOKEN = ("6726060216:AAFAoOYkSm39p1ug-D6d1REPFZm5MycogEs") #⚠️ Required
+    BOT_USERNAME = ("RokuFileRenamerRobot") #⚠️ Required
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Snow_User_Data")     
-    DB_URL  = os.environ.get("DB_URL","") #⚠️ Required
+    DB_URL  = os.environ.get("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority","") #⚠️ Required
  
     # other configs
     DOWNLOAD_LOCATION = "./MEGA_DOWNLOADS"
     TG_MAX_SIZE = 2040108421
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/3b7050b8b5d918a00b490.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()] #⚠️ Required
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") #⚠️ Required Username without @
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "")) #⚠️ Required
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5098097249').split()] #⚠️ Required
+    FORCE_SUB   = ("Rokubotz") #⚠️ Required Username without @
+    LOG_CHANNEL = int("-1002048442251") #⚠️ Required
     FLOOD = int(os.environ.get("FLOOD", '10'))
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 
