@@ -11,7 +11,7 @@ class Config(object):
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Snow_User_Data")     
-    DB_URL  = os.environ.get("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority","")
+    DB_URL  = ("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     DOWNLOAD_LOCATION = "./MEGA_DOWNLOADS"
