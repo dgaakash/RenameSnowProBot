@@ -18,7 +18,7 @@ class Config(object):
     TG_MAX_SIZE = 2040108421
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/3b7050b8b5d918a00b490.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5725206423').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     FORCE_SUB   = ("anime_warior") 
     LOG_CHANNEL = int("-1002064543977")
     FLOOD = int(os.environ.get("FLOOD", '10'))
